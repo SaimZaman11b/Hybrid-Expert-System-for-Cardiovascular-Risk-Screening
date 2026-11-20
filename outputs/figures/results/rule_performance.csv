@@ -1,0 +1,15 @@
+dataset,rule,description,n_fired,fired_pct,disease_rate_when_fired_pct,disease_rate_when_not_fired_pct,recall_pct,specificity_pct,lift
+A,high_sysbp,Systolic blood pressure at or above 140 mmHg,18441,26.92,83.7,36.88,45.53,91.32,1.69
+A,high_diabp,Diastolic blood pressure at or above 90 mmHg,19276,28.13,77.17,38.64,43.88,87.29,1.56
+A,high_chol,Cholesterol above normal,17144,25.02,67.25,43.55,34.01,83.78,1.36
+A,high_gluc,Glucose above normal,10265,14.98,60.31,47.57,18.26,88.23,1.22
+A,obese,BMI at or above 30 (obesity range),17874,26.09,62.55,44.87,32.98,80.66,1.26
+A,smoker,Current smoker,6033,8.81,46.86,49.73,8.34,90.74,0.95
+A,older,Age 60 or older,12484,18.22,66.73,45.64,24.57,88.0,1.35
+B,high_sysbp,Systolic blood pressure at or above 140 mmHg,1283,30.27,24.71,11.07,49.22,73.12,1.63
+B,high_diabp,Diastolic blood pressure at or above 90 mmHg,1060,25.01,24.06,12.24,39.6,77.6,1.58
+B,high_chol,Cholesterol above normal,3359,79.26,16.31,10.92,85.09,21.79,1.07
+B,high_gluc,Glucose above normal,361,8.52,23.27,14.44,13.04,92.29,1.53
+B,obese,BMI at or above 30 (obesity range),539,12.72,19.48,14.57,16.3,87.92,1.28
+B,smoker,Current smoker,2094,49.41,15.9,14.51,51.71,51.0,1.05
+B,older,Age 60 or older,690,16.28,27.68,12.77,29.66,86.12,1.82

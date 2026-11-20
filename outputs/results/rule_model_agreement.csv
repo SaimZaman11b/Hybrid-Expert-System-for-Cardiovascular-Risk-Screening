@@ -1,0 +1,9 @@
+dataset,case,n,share_pct,disease_rate_pct
+A,both alert,26288,38.37,76.78
+A,both quiet,30446,44.44,25.14
+A,"rules alert, model quiet",2909,4.25,32.14
+A,"model alert, rules quiet",8872,12.95,57.79
+B,both alert,2279,53.78,21.24
+B,both quiet,840,19.82,5.83
+B,"rules alert, model quiet",673,15.88,9.36
+B,"model alert, rules quiet",446,10.52,10.76

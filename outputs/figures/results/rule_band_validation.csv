@@ -1,0 +1,9 @@
+dataset,rule_band,n,share_pct,disease_rate_pct
+A,Low,39318,57.39,32.51
+A,Medium,21791,31.8,69.07
+A,High,7406,10.81,81.95
+A,ROC-AUC of band as a score,68515,,0.704
+B,Low,1286,30.34,7.54
+B,Medium,2172,51.25,14.73
+B,High,780,18.4,29.1
+B,ROC-AUC of band as a score,4238,,0.643

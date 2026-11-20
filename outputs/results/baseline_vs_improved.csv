@@ -1,0 +1,5 @@
+step,model,A_cv_roc_auc,A_gain_vs_baseline,A_cv_recall_at_70spec,B_roc_auc,B_gain_vs_baseline,B_pr_auc
+Baseline,Logistic Regression,0.7906,0.0,0.7473,0.6796,0.0,0.2799
+Tuned non-linear model,Random Forest,0.7996,0.009,0.7573,0.6482,-0.0314,0.2203
+Tuned non-linear model,Gradient Boosting,0.8001,0.0095,0.7555,0.6614,-0.0182,0.2324
+Ensembling,Soft-voting ensemble,0.7992,0.0086,0.7571,0.6703,-0.0093,0.249

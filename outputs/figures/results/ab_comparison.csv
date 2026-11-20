@@ -1,0 +1,19 @@
+attribute,kind,level,mean_A,mean_B,sd_A,sd_B,ks_statistic,ks_pvalue,share_A,share_B
+age,numeric,,52.7918,49.5849,6.7645,8.5722,0.2339,0.0,,
+sysbp,numeric,,126.6743,132.3524,16.6795,22.0381,0.2609,0.0,,
+diabp,numeric,,81.3041,82.8935,9.4231,11.9108,0.2549,0.0,,
+bmi,numeric,,27.4354,25.802,5.1661,4.0801,0.1367,0.0,,
+sex,category share,0.0,,,,,,,0.6513,0.5708
+sex,category share,1.0,,,,,,,0.3487,0.4292
+smoker,category share,0.0,,,,,,,0.9119,0.5059
+smoker,category share,1.0,,,,,,,0.0881,0.4941
+chol_level,category share,1.0,,,,,,,0.7498,0.1979
+chol_level,category share,2.0,,,,,,,0.1355,0.3529
+chol_level,category share,3.0,,,,,,,0.1147,0.4491
+gluc_level,category share,1.0,,,,,,,0.8502,0.9062
+gluc_level,category share,2.0,,,,,,,0.0738,0.0714
+gluc_level,category share,3.0,,,,,,,0.076,0.0223
+sysbp,rounding (multiple of 10),,,,,,,,0.9705,0.1206
+diabp,rounding (multiple of 10),,,,,,,,0.971,0.1482
+sysbp = 120 and diabp = 80,rounding (exact value),,,,,,,,0.3429,0.005
+age above A's maximum,range,,,,,,,,0.0,0.0394

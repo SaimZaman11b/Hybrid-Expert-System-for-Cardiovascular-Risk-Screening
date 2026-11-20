@@ -1,0 +1,23 @@
+dataset,step,detail,rows_removed,rows_remaining
+A,load,cardio_train.csv (semicolon separated),0,70000
+A,drop duplicates,identical in every column except id,24,69976
+A,convert,age days -> whole years (floor of days/365.25); BMI = weight / height^2,0,69976
+A,remove impossible,height outside 130-210 cm,93,69883
+A,remove impossible,weight outside 35-200 kg,18,69865
+A,remove impossible,BMI outside 14-60,25,69840
+A,remove impossible,systolic BP outside 70-250 mmHg,227,69613
+A,remove impossible,diastolic BP outside 40-150 mmHg,1010,68603
+A,remove impossible,systolic not above diastolic,88,68515
+A,rename/recode,"gender 2 -> sex 1 (male), 1 -> 0; renamed BP, smoker, level and target columns",0,68515
+A,drop attributes,"not in Framingham: id, gender, height, weight, alco, active",0,68515
+B,load,framingham.csv ('NA' read as missing),0,4238
+B,keep/rename,"kept the shared columns; male->sex, sysBP->sysbp, diaBP->diabp, currentSmoker->smoker, TenYearCHD->target",0,4238
+B,bin,"totChol mg/dl -> level using clinical bands (200.0, 240.0); glucose mg/dl -> level using (100.0, 126.0)",0,4238
+B,missing kept,"bmi: 19 missing values left as missing (imputed later, using A only)",0,4238
+B,missing kept,"chol_level: 50 missing values left as missing (imputed later, using A only)",0,4238
+B,missing kept,"gluc_level: 388 missing values left as missing (imputed later, using A only)",0,4238
+B,"out-of-range (reported, kept)",systolic BP outside 70-250: 1 rows,0,4238
+B,"out-of-range (reported, kept)",diastolic BP outside 40-150: 0 rows,0,4238
+B,"out-of-range (reported, kept)",BMI outside 14-60 (missing ignored): 0 rows,0,4238
+B,"out-of-range (reported, kept)",systolic not above diastolic: 0 rows,0,4238
+A+B,final checks,identical columns and numeric types; levels only 1-3; no missing values in A; B keeps all rows,0,72753

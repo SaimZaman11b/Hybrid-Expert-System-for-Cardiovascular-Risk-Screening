@@ -1,0 +1,25 @@
+model,feature,importance_mean,importance_sd
+Logistic Regression,age,0.02908,0.00134
+Logistic Regression,sex,4e-05,3e-05
+Logistic Regression,sysbp,0.17194,0.0054
+Logistic Regression,diabp,0.0021,0.00017
+Logistic Regression,bmi,0.00429,0.00039
+Logistic Regression,smoker,0.00087,0.00018
+Logistic Regression,chol_level,0.02558,0.00071
+Logistic Regression,gluc_level,0.00127,0.00013
+Random Forest,age,0.03589,0.00152
+Random Forest,sex,0.00057,0.00016
+Random Forest,sysbp,0.16293,0.00351
+Random Forest,diabp,0.00783,0.00034
+Random Forest,bmi,0.00513,0.00081
+Random Forest,smoker,0.00088,0.00019
+Random Forest,chol_level,0.03372,0.00171
+Random Forest,gluc_level,0.00265,0.00026
+Gradient Boosting,age,0.03796,0.00084
+Gradient Boosting,sex,0.00025,5e-05
+Gradient Boosting,sysbp,0.18044,0.00479
+Gradient Boosting,diabp,0.00307,0.00028
+Gradient Boosting,bmi,0.00514,0.00076
+Gradient Boosting,smoker,0.00128,0.00012
+Gradient Boosting,chol_level,0.02838,0.00127
+Gradient Boosting,gluc_level,0.00132,0.00034

@@ -1,0 +1,104 @@
+{
+  "best_model": "Gradient Boosting",
+  "models": {
+    "Logistic Regression": "logistic_regression.joblib",
+    "Random Forest": "random_forest.joblib",
+    "Gradient Boosting": "gradient_boosting.joblib",
+    "Soft-voting ensemble": "soft_voting_ensemble.joblib"
+  },
+  "features": [
+    "age",
+    "sex",
+    "sysbp",
+    "diabp",
+    "bmi",
+    "smoker",
+    "chol_level",
+    "gluc_level"
+  ],
+  "trained_on": "Dataset A, Cardiovascular Disease dataset (68,515 rows after cleaning)",
+  "target_meaning": "cardio = cardiovascular disease present at the exam (A); the score is NOT a 10-year risk",
+  "app_cutoff_rule": "score cutoff giving 75% recall on A's out-of-fold predictions (nested CV)",
+  "cutoffs": {
+    "Logistic Regression": {
+      "recall75": 0.43314597443669073,
+      "youden": 0.481450241293738
+    },
+    "Random Forest": {
+      "recall75": 0.42117461170729426,
+      "youden": 0.4877995669994461
+    },
+    "Gradient Boosting": {
+      "recall75": 0.42589127811735783,
+      "youden": 0.4987774829660293
+    },
+    "Soft-voting ensemble": {
+      "recall75": 0.4286023809246604,
+      "youden": 0.48754379008222887
+    }
+  },
+  "cutoff_note": "Cutoffs come from a dataset that is about 50% positive; in lower-risk groups most flagged people will be false alarms.",
+  "level_bands_mgdl": {
+    "chol_level_2_from": 200.0,
+    "chol_level_3_from": 240.0,
+    "gluc_level_2_from": 100.0,
+    "gluc_level_3_from": 126.0
+  },
+  "selection_rule": "highest mean recall at 70% specificity in nested 5-fold CV on A; models within 0.02 are tied and ranked by mean ROC-AUC",
+  "selection_table": [
+    {
+      "model": "Gradient Boosting",
+      "recall70_mean": 0.75549,
+      "recall70_sd": 0.00486,
+      "auc_mean": 0.80014,
+      "auc_sd": 0.00344,
+      "tied_with_best": true,
+      "selected": true
+    },
+    {
+      "model": "Logistic Regression",
+      "recall70_mean": 0.74732,
+      "recall70_sd": 0.00503,
+      "auc_mean": 0.79056,
+      "auc_sd": 0.00367,
+      "tied_with_best": true,
+      "selected": false
+    },
+    {
+      "model": "Random Forest",
+      "recall70_mean": 0.75726,
+      "recall70_sd": 0.00493,
+      "auc_mean": 0.79962,
+      "auc_sd": 0.00366,
+      "tied_with_best": true,
+      "selected": false
+    },
+    {
+      "model": "Soft-voting ensemble",
+      "recall70_mean": 0.75715,
+      "recall70_sd": 0.0037,
+      "auc_mean": 0.79917,
+      "auc_sd": 0.00379,
+      "tied_with_best": true,
+      "selected": false
+    }
+  ],
+  "best_params": {
+    "Logistic Regression": {
+      "clf__C": 10.0
+    },
+    "Random Forest": {
+      "clf__max_depth": 10,
+      "clf__min_samples_leaf": 20
+    },
+    "Gradient Boosting": {
+      "clf__learning_rate": 0.1,
+      "clf__max_leaf_nodes": 8
+    }
+  },
+  "a_positive_rate": 0.4947967598336131,
+  "b_positive_rate": 0.1519584709768759,
+  "sklearn_version": "1.9.1",
+  "seed": 42,
+  "selection_note": "the soft-voting ensemble (notebook 03) is included in the selection with the same rule"
+}

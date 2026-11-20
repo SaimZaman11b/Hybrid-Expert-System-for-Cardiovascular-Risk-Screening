@@ -1,0 +1,9 @@
+model,feature,importance_mean,importance_sd
+Soft-voting ensemble,age,0.03396,0.00103
+Soft-voting ensemble,sex,0.00024,4e-05
+Soft-voting ensemble,sysbp,0.17347,0.00473
+Soft-voting ensemble,diabp,0.00324,0.0003
+Soft-voting ensemble,bmi,0.00455,0.00064
+Soft-voting ensemble,smoker,0.00102,0.00013
+Soft-voting ensemble,chol_level,0.02904,0.00121
+Soft-voting ensemble,gluc_level,0.00161,0.00022

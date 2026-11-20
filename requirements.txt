@@ -1,0 +1,12 @@
+# Versions used to build and test the project (Python 3.13).
+# If installation fails on your Python version, remove the version pins (the "==x.y.z" parts) and install the latest versions.
+numpy==2.5.3
+pandas==3.0.5
+scipy==1.18.1
+scikit-learn==1.9.1
+imbalanced-learn==0.14.2
+matplotlib==3.11.2
+joblib==1.6.0
+streamlit==1.67.0
+# To open and run the notebooks (not needed for the app):
+# jupyterlab

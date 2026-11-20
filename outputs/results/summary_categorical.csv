@@ -1,0 +1,23 @@
+dataset,attribute,value,pct
+A (Cardio),sex,0,65.1
+A (Cardio),sex,1,34.9
+A (Cardio),smoker,0,91.2
+A (Cardio),smoker,1,8.8
+A (Cardio),chol_level,1,75.0
+A (Cardio),chol_level,2,13.6
+A (Cardio),chol_level,3,11.5
+A (Cardio),gluc_level,1,85.0
+A (Cardio),gluc_level,2,7.4
+A (Cardio),gluc_level,3,7.6
+B (Framingham),sex,0,57.1
+B (Framingham),sex,1,42.9
+B (Framingham),smoker,0,50.6
+B (Framingham),smoker,1,49.4
+B (Framingham),chol_level,1,19.6
+B (Framingham),chol_level,2,34.9
+B (Framingham),chol_level,3,44.4
+B (Framingham),chol_level,missing,1.2
+B (Framingham),gluc_level,1,82.3
+B (Framingham),gluc_level,2,6.5
+B (Framingham),gluc_level,3,2.0
+B (Framingham),gluc_level,missing,9.2

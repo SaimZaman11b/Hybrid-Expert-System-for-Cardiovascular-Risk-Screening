@@ -1,0 +1,16 @@
+dataset,attribute,group,n,disease_rate_pct,flagged_pct,recall_pct,false_positive_rate_pct,precision_pct
+A (out-of-fold),sex,female,44623,49.2,51.5,75.0,28.7,71.7
+A (out-of-fold),sex,male,23892,50.0,52.6,75.0,30.2,71.3
+A (out-of-fold),age group,under 45,10077,29.3,23.6,60.3,8.4,74.9
+A (out-of-fold),age group,45-54,27900,44.7,40.3,65.9,19.5,73.2
+A (out-of-fold),age group,55-64,30538,60.5,71.8,83.5,54.0,70.3
+B (trained on A),sex,female,2419,12.4,63.1,82.4,60.3,16.3
+B (trained on A),sex,male,1819,18.9,65.9,82.8,62.0,23.7
+B (trained on A),age group,under 45,1425,6.5,36.5,56.5,35.1,10.0
+B (trained on A),age group,45-54,1496,14.9,68.2,78.9,66.4,17.2
+B (trained on A),age group,55-64,1150,23.2,88.9,91.0,88.2,23.8
+B (trained on A),age group,65 and over,167,37.1,97.0,98.4,96.2,37.7
+A (out-of-fold),age group,GAP (max - min),68515,,,23.2,45.6,
+A (out-of-fold),sex,GAP (max - min),68515,,,0.0,1.5,
+B (trained on A),age group,GAP (max - min),4238,,,41.9,61.1,
+B (trained on A),sex,GAP (max - min),4238,,,0.4,1.7,

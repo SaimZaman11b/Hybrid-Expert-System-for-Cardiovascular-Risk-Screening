@@ -1,0 +1,9 @@
+attribute,A_missing_pct,B_missing_pct,B_missing_rows
+age,0.0,0.0,0
+sex,0.0,0.0,0
+sysbp,0.0,0.0,0
+diabp,0.0,0.0,0
+bmi,0.0,0.45,19
+smoker,0.0,0.0,0
+chol_level,0.0,1.18,50
+gluc_level,0.0,9.16,388

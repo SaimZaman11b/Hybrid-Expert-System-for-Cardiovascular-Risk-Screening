@@ -1,0 +1,6 @@
+model,fold,roc_auc,pr_auc,recall_at_70spec
+Soft-voting ensemble,1,0.79478,0.77507,0.75177
+Soft-voting ensemble,2,0.79692,0.77444,0.75605
+Soft-voting ensemble,3,0.7986,0.7828,0.75664
+Soft-voting ensemble,4,0.80465,0.78426,0.76091
+Soft-voting ensemble,5,0.80087,0.78292,0.76036

@@ -1,0 +1,10 @@
+model,strategy,recall_at_0.5,f1_at_0.5,balanced_accuracy,roc_auc,recall_gain_vs_baseline,f1_gain_vs_baseline
+Logistic Regression,none,0.0512,0.0939,0.522,0.723,0.0,0.0
+Logistic Regression,class_weight,0.6755,0.3856,0.674,0.7241,0.6242,0.2918
+Logistic Regression,SMOTE,0.6817,0.387,0.6758,0.7216,0.6304,0.2931
+Random Forest,none,0.0016,0.0031,0.5008,0.712,-0.0497,-0.0908
+Random Forest,class_weight,0.6413,0.3691,0.6564,0.7102,0.5901,0.2752
+Random Forest,SMOTE,0.1894,0.2539,0.5676,0.7087,0.1382,0.16
+Gradient Boosting,none,0.045,0.0813,0.517,0.7046,-0.0062,-0.0125
+Gradient Boosting,class_weight,0.6351,0.3678,0.6546,0.7053,0.5839,0.2739
+Gradient Boosting,SMOTE,0.1382,0.2114,0.5539,0.7086,0.087,0.1175
